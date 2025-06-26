@@ -3,7 +3,7 @@
     "version": "1.0",
     "fixtures": [
         {
-            "id": "b642bdc2-183c-4aba-bacb-4ee24eead4c3",
+            "id": "413d98c6-5c46-4f58-a1f7-65e227478d25",
             "name": "Kanjo Spot 60",
             "address": 1,
             "count": 4,
@@ -38,54 +38,6 @@
                         "Dimmer",
                         "Strobe / Shutter",
                         "Functions"
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "c5ff764d-abdc-4b82-8ced-2f121720e2f2",
-            "name": "Compact Par 18",
-            "address": 41,
-            "count": 6,
-            "mode": "6Channel",
-            "ofl_key": null,
-            "ofl_modes": [
-                {
-                    "name": "1Channel",
-                    "shortName": "1ch",
-                    "channels": [
-                        "Color Macros"
-                    ]
-                },
-                {
-                    "name": "3Channel",
-                    "shortName": "3ch",
-                    "channels": [
-                        "Red",
-                        "Green",
-                        "Blue"
-                    ]
-                },
-                {
-                    "name": "4Channel",
-                    "shortName": "4ch",
-                    "channels": [
-                        "Dimmer",
-                        "Red",
-                        "Green",
-                        "Blue"
-                    ]
-                },
-                {
-                    "name": "6Channel",
-                    "shortName": "6ch",
-                    "channels": [
-                        "Dimmer",
-                        "Red / RGB Macros / Program Speed / Sound Sensitivity",
-                        "Green",
-                        "Blue",
-                        "Strobe",
-                        "Color Programs"
                     ]
                 }
             ]
