@@ -1,0 +1,93 @@
+INFO:     Started server process [5260]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+Loaded DMX port from settings: /dev/ttyUSB0
+Successfully initialized DmxPy on port: /dev/ttyUSB0
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40358 - "GET /api/dmx_status HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [5260]

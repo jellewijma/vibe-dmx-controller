@@ -1,0 +1,8 @@
+.dmx-grid-cell {
+    aspect-ratio: 1 / 1;
+}
+
+.fader-module {
+    grid-row: span 2 / span 2;
+    aspect-ratio: auto;
+}
