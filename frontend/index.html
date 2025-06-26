@@ -19,10 +19,38 @@
         </div>
 
         <h1 class="text-3xl font-bold mb-6 text-center text-gray-100">DMX Controller</h1>
+
+        <div class="w-full mb-4 border-b border-gray-600">
+            <nav class="flex space-x-4" id="tabs">
+                <button data-tab="grid-tab" class="tab-btn text-lg font-semibold py-2 px-4 border-b-2 border-blue-500 text-white">Grid</button>
+                <button data-tab="fixtures-tab" class="tab-btn text-lg font-semibold py-2 px-4 border-b-2 border-transparent text-gray-400 hover:border-gray-500 hover:text-gray-200">Fixtures</button>
+                <button data-tab="universe-tab" class="tab-btn text-lg font-semibold py-2 px-4 border-b-2 border-transparent text-gray-400 hover:border-gray-500 hover:text-gray-200">Universe</button>
+            </nav>
+        </div>
+
         <div id="dmx-status" class="text-center mb-4 text-lg font-semibold"></div>
 
-        <div id="dmx-grid" class="grid grid-cols-5 gap-4 p-4 bg-gray-700 rounded-lg">
-            <!-- Modules will be injected here -->
+        <div id="grid-tab-content" class="tab-content">
+            <div id="dmx-grid" class="grid grid-cols-5 gap-4 p-4 bg-gray-700 rounded-lg">
+                <!-- Modules will be injected here -->
+            </div>
+        </div>
+
+        <div id="fixtures-tab-content" class="tab-content hidden">
+            <div class="flex justify-between items-center mb-4">
+                <h2 class="text-2xl font-bold">Fixtures</h2>
+                <button id="add-fixture-btn" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md">Add Fixture</button>
+            </div>
+            <div id="fixtures-list" class="space-y-4">
+                <!-- Fixtures will be listed here -->
+            </div>
+        </div>
+
+        <div id="universe-tab-content" class="tab-content hidden">
+            <h2 class="text-2xl font-bold mb-4">DMX Universe Overview</h2>
+            <div id="universe-grid" class="grid grid-cols-16 gap-1 text-xs text-center">
+                <!-- Universe channels will be injected here -->
+            </div>
         </div>
     </div>
 
@@ -87,6 +115,53 @@
 
             <button id="save-edit-btn" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md">Save</button>
             <button id="remove-module-btn" class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-md mt-2">Remove Module</button>
+
+        </div>
+    </div>
+
+    <!-- Fixture Modal -->
+    <div id="fixture-modal" class="fixed inset-0 bg-gray-900 bg-opacity-75 flex items-center justify-center z-50 hidden">
+        <div class="bg-gray-800 p-8 rounded-lg shadow-md w-full max-w-md relative">
+            <button id="close-fixture-modal-btn" class="absolute top-4 right-4 text-gray-400 hover:text-gray-100">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <h2 id="fixture-modal-title" class="text-2xl font-bold mb-6 text-center text-gray-100">Add Fixture</h2>
+
+            <div class="mb-4">
+                <label for="ofl-fixture-select" class="block text-sm font-medium text-gray-300">Import from OFL:</label>
+                <select id="ofl-fixture-select" class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-600 bg-gray-700 text-gray-100 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm rounded-md">
+                    <option value="">-- Select OFL Fixture --</option>
+                </select>
+                <button id="import-ofl-fixture-btn" class="w-full bg-gray-600 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-md mt-2">Import Selected OFL Fixture</button>
+            </div>
+
+            <div class="mb-4">
+                <label for="fixture-name-input" class="block text-sm font-medium text-gray-300">Fixture Name:</label>
+                <input type="text" id="fixture-name-input" class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-600 bg-gray-700 text-gray-100 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm rounded-md">
+            </div>
+
+            <div class="mb-4">
+                <label for="fixture-address-input" class="block text-sm font-medium text-gray-300">DMX Address:</label>
+                <input type="number" id="fixture-address-input" min="1" max="512" class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-600 bg-gray-700 text-gray-100 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm rounded-md">
+            </div>
+
+            <div class="mb-4">
+                <label for="fixture-count-input" class="block text-sm font-medium text-gray-300">Count:</label>
+                <input type="number" id="fixture-count-input" min="1" value="1" class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-600 bg-gray-700 text-gray-100 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm rounded-md">
+            </div>
+
+            <div class="mb-4">
+                <label for="fixture-mode-select" class="block text-sm font-medium text-gray-300">Mode:</label>
+                <select id="fixture-mode-select" class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-600 bg-gray-700 text-gray-100 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm rounded-md">
+                    <!-- Modes will be populated here -->
+                </select>
+                <p class="text-sm text-gray-400 mt-1">Channels in mode: <span id="mode-channel-count">0</span></p>
+            </div>
+
+            <button id="save-fixture-btn" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md">Save Fixture</button>
+            <button id="delete-fixture-btn" class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-md mt-2 hidden">Delete Fixture</button>
 
         </div>
     </div>
